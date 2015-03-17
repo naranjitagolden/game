@@ -1,28 +1,45 @@
 == README
+== Que aprendí en este challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+cuales son los temas asociados! o NECESIDADES CONGNITIVAS! que tuve durante este challenge
 
-Things you may want to cover:
+- Al necesitar deshacer un modelo o un controllador es importante hacerlo desde la consola, ya que el generador de rails
+crea muchas dependencias, archivos y uniones entre ellos que de intentarse deshacer a mano crearían muchos errores.
+para esto se utiliza {rails destroy model and controller + name}
 
-* Ruby version
+- form_helpers
+Al hacer los forms ésta documentación sirve para saber como funcionan y tambien como adaptarlos a las necesidades
+cuando se requiere que sea para números, para checkbox en el caso de booleans, cuando son campos de texto, incluso para
+escoger colores y muchos otros con caracteristicas específicas
+- http://guides.rubyonrails.org/form_helpers.html
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- Cambiar los nombres de un modelo y el nombre del atributo o columna de una tabla:
+cuando necesitas cambiar los nombres del modelo o de un atributo que ya se ha convertido en columna es necesario
+hacerlo desde la terminar por la misma razón que se debe deshacer, y los ejemplos y métodos están acá. 
+Hay que tener en cuenta generar el archivo de migraciones con los respectivos cambios, y estar atento de cambiar las lineas 
+en el archivo de migración vacio que se crea y luego volver a correr la migración.
+
+http://stackoverflow.com/questions/6245115/one-time-change-model-attribute-column-name-in-ruby-on-rails
+
+http://stackoverflow.com/questions/4826879/how-to-re-name-a-activerecord-model-which-can-automatically-change-the-table-nam
+
+- Lanzar alertas cuando no se necesitan más vistas o empleando la misma vista se emplea el flash alert
+http://guides.rubyonrails.org/action_controller_overview.html#the-flash
+
+- Validaciones
+Y finalmente las validaciones pueden componerse por tantos items como se requieran para hacegurarse que la información que se
+debe ingresar cumpla con las características necesarias.
+
+http://api.rubyonrails.org/classes/ActiveModel/Validations/ClassMethods.html
+http://guides.rubyonrails.org/active_record_validations.html
+
+
+[Como las dudas y hallazgos de un grupo se pueden convertir en indicios y elementos complementarios 
+para el siguiente, o para un compañero que va más atras [Inteligencia colectiva], no se trata de estar todos perdidos y 
+pasar todos por el mismo duro camino, "La nueva Educación" se trata sobre todo, de remover los obstáculos que descubrimos para
+que a otros se les facilite el proceso, no se trata de competir, de ver quien logra las cosas más rápido, o avanza más, 
+consiste en comprender, ayudar a comprender, generar contenido al mismo tiempo que aprendes y avanzas para que ese camino
+se facilite para otros.]
