@@ -3,21 +3,23 @@
 
 cuales son los temas asociados! o NECESIDADES CONGNITIVAS! que tuve durante este challenge
 
-- Al necesitar deshacer un modelo o un controllador es importante hacerlo desde la consola, ya que el generador de rails
+- Deshacer modelo y/o un controllador
+Al necesitar deshacer un modelo o un controllador es importante hacerlo desde la consola, ya que el generador de rails 
 crea muchas dependencias, archivos y uniones entre ellos que de intentarse deshacer a mano crearían muchos errores.
-para esto se utiliza {rails destroy model and controller + name}
+para esto se utiliza {rails destroy model && controller + name}
 
-- form_helpers
+- form_helpers:
 Al hacer los forms ésta documentación sirve para saber como funcionan y tambien como adaptarlos a las necesidades
 cuando se requiere que sea para números, para checkbox en el caso de booleans, cuando son campos de texto, incluso para
 escoger colores y muchos otros con caracteristicas específicas
-- http://guides.rubyonrails.org/form_helpers.html
 
-- http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html
+http://guides.rubyonrails.org/form_helpers.html
+
+http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html
 
 
 - Cambiar los nombres de un modelo y el nombre del atributo o columna de una tabla:
-cuando necesitas cambiar los nombres del modelo o de un atributo que ya se ha convertido en columna es necesario
+Cuando necesitas cambiar los nombres del modelo o de un atributo que ya se ha convertido en columna es necesario
 hacerlo desde la terminar por la misma razón que se debe deshacer, y los ejemplos y métodos están acá. 
 Hay que tener en cuenta generar el archivo de migraciones con los respectivos cambios, y estar atento de cambiar las lineas 
 en el archivo de migración vacio que se crea y luego volver a correr la migración.
@@ -26,10 +28,10 @@ http://stackoverflow.com/questions/6245115/one-time-change-model-attribute-colum
 
 http://stackoverflow.com/questions/4826879/how-to-re-name-a-activerecord-model-which-can-automatically-change-the-table-nam
 
-- Lanzar alertas cuando no se necesitan más vistas o empleando la misma vista se emplea el flash alert
+- Lanzar alertas cuando no se necesitan más vistas o empleando la misma vista se emplea el flash alert:
 http://guides.rubyonrails.org/action_controller_overview.html#the-flash
 
-- Validaciones
+- Validaciones:
 Y finalmente las validaciones pueden componerse por tantos items como se requieran para hacegurarse que la información que se
 debe ingresar cumpla con las características necesarias.
 
